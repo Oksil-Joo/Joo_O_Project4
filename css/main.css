@@ -9,98 +9,58 @@ body {
   text-align: center;
 }
 
+.container
+  {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+  }
 
-@media screen and (min-width:641px) {
-  .container
-    {
-      margin: 0 auto;
-      max-width: 1140px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-color: white;
-    }
-  .box1 {
-      background-color: blue;
+  .box1, .box2, .box3, .box4 {
       width: 200px;
-      height: 600px;
+      height: 500px;
       padding: 20px;
       margin: 10px;
       flex: 1 0 auto;
+      }
+
+
+@media (min-width:641px) {
+
+  .box1 {
+      background-color: blue;
       }
 
   .box2 {
         background-color: purple;
-        width: 200px;
-        height: 600px;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 0 auto;
         }
 
   .box3 {
       background-color: grey;
-      width: 200px;
-      height: 600px;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 0 auto;
     }
 
   .box4 {
         background-color: brown;
-        width: 200px;
-        height: 600px;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 0 auto;
       }
   }
-  @media screen and (max-width:641px) {
-    .container
-      {
-        margin: 0 auto;
-        max-width: 1140px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: white;
-      }
+  @media (min-width:0px) and (max-width:640px) {
+
     .box1 {
         background-color: pink;
-        width: 200px;
-        height: 600px;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 0 auto;
         }
 
     .box2 {
           background-color: red;
-          width: 200px;
-          height: 600px;
-          padding: 20px;
-          margin: 10px;
-          flex: 1 0 auto;
           }
 
     .box3 {
-        background-color: grey;
-        width: 200px;
-        height: 600px;
-        padding: 20px;
-        margin: 10px;
-        flex: 1 0 auto;
         display: none;
       }
 
     .box4 {
-          background-color: brown;
-          width: 200px;
-          height: 600px;
-          padding: 20px;
-          margin: 10px;
-          flex: 1 0 auto;
           display: none;
         }
     }
